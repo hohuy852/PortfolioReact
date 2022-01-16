@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Header = () => {
     return (
         <nav id='header' className='py-8 bg-header shadow-[#23263a] drop-shadow-sm '>
@@ -16,6 +17,12 @@ const Header = () => {
                         <li><a href="/" className='hover:text-red-400'>Contact</a></li>
                     </ul>
                 </div>
+                <div className='ml-auto xl:hidden'>
+                    <button>
+                        <FontAwesomeIcon icon={faBars} size='2x' color='#fff' />
+                    </button>
+                </div>
+
             </div>
         </nav>
     )
