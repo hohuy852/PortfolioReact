@@ -1,4 +1,4 @@
-import { Header, Banner, About, Project, Skill, Footer, Hobbies } from '../components'
+import { Header, Banner, About, Project, Skill, Footer,Contact, Hobbies } from '../components'
 import React from 'react'
 
 const Home = () => {
@@ -9,6 +9,7 @@ const Home = () => {
             <About/>
             <Skill/>
             <Project/>
+            <Contact/>
         </div>
     )
 }

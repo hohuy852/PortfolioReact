@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faDiscord, } from '@fortawesome/free-brands-svg-icons'
 import { faGamepad, faHeadphones, faBook, faPlane } from '@fortawesome/free-solid-svg-icons'
+
+
+
 const Hobbies = () => {
+  
     const [hobbies, setHobbies] = useState([
         {
             icon: faGithub,
@@ -54,7 +58,7 @@ const Hobbies = () => {
             <div className='xl:container pt-24 px-8'>
                 <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 sm:gap-y-5 gap-y-8 '>
                     {hobbies.map((hobbie, index) => (
-                        <div key={index} data-info={hobbie.title} className='flex flex-col text-white px-9 py-12 bg-[#23263a] transition ease-in hover:bg-[#dc3545] rounded-lg group'>
+                        <div key={index} data-info={hobbie.title} className='flex flex-col text-white px-9 py-12 bg-[#23263a] transition ease-in hover:bg-[#dc3545] rounded-lg group '>
                             <div className='hobbies-icon '>
                                 <FontAwesomeIcon icon={hobbie.icon} color={iconColor} size='3x' className='group-hover:text-white group-hover:animate-bounce' />
                             </div>
