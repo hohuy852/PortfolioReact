@@ -5,11 +5,13 @@ const Home = () => {
     return (
         <div className='font-body'>
             <Header />
+            <Banner/>
             <Hobbies/>
             <About/>
             <Skill/>
             <Project/>
             <Contact/>
+            <Footer/>
         </div>
     )
 }

@@ -49,7 +49,7 @@ const Project = () => {
         },
     ])
     return (
-        <section id='hobbies' className='py-32 bg-[#23263a]' >
+        <section id='project' className='py-32 bg-[#23263a]' >
             <div className='xl:container px-5'>
                 <div className='flex justify-center'>
                     <div className='section-title grid justify-items-center'>
@@ -70,13 +70,13 @@ const Project = () => {
                 </div>
                 <div className='grid sm:grid-cols-2 lg:grid-cols-3 text-white mt-14 gap-x-5 gap-y-7 px-4 sm:px0'>
                     {
-                        data.map((repos, index) => (<div className='bg-color-1 rounded-lg flex  flex-col gap-y-6 group' key={index}>
+                        data.map((repos, index) => (<div className='bg-color-1 rounded-lg flex  flex-col gap-y-6 group' key={repos.name}>
                     
                                 <img src={repos.img} alt="" className='rounded-lg  object-contain ' />
                          
                             <h3 className='pl-1'>{repos.name}</h3>
                             <div className='pl-1'>
-                                {repos.description.map((des) => (<p> {des} </p>))}
+                                {repos.description.map((des) => (<p key={des}> {des} </p>))}
                             </div>
                             <div className='grid grid-cols-2 justify-items-center pb-4 mt-auto'>
                                 <a href={repos.link} target="_blank" rel="noopener noreferrer" className='px-1 lg:px-4 py-2 rounded-xl hover:bg-red-custom'>

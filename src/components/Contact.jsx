@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Contact = () => {
     return (
-        <section id='hobbies' className='py-32 bg-color-1' >
+        <section id='contact' className='py-32 bg-color-1' >
             <div className='xl:container px-5'>
                 <div className='flex justify-center'>
                     <div className='section-title grid justify-items-center'>

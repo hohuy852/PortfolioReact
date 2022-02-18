@@ -2,9 +2,9 @@ import React from 'react'
 import { useEffect } from 'react'
 
 const About = () => {
-   
+
     return (
-        <section id='hobbies' className='py-32 bg-[#23263a]' >
+        <section id='about' className='py-32 bg-[#23263a]' >
             <div className='xl:container px-5'>
                 <div className='flex justify-center'>
                     <div className='section-title grid justify-items-center'>
@@ -17,7 +17,6 @@ const About = () => {
             <div className='xl:container  pt-24 '>
                 <div className='grid sm:grid-cols-2 justify-items-center gap-y-10 px-6'>
                     <div className='w-80 h-96 bg-white '>
-
                     </div>
                     <div className='text-white '>
                         <h2 className='text-h2 mb-6 font-bold'>Hi There</h2>

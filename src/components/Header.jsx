@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Header = () => {
     return (
-        <nav id='header' className='py-8 bg-header shadow-[#23263a] drop-shadow-sm '>
+        <nav id='header' className='py-8 bg-header shadow-[#23263a] drop-shadow-sm   overflow-hidden z-10 '>
             <div className='px-12 xl:container flex items-center'>
                 <div>
                     <a href="/"> <img src="https://themebing.com/html/amike/assets/images/logo.png" width={110} height={26} className="custom-logo" alt="Amike" /></a>

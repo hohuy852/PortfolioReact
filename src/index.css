@@ -17,5 +17,38 @@
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 7px solid white;
-  @apply  absolute top-7 right-4;
+  @apply absolute top-7 right-4;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    border-right: 0.15em solid white;
+  }
+  to {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+.typer h1 {
+  animation: typing 3s steps(20), blink-caret 0.5s step-end 7 normal;
+  white-space: nowrap;
+  overflow: hidden;
+ 
+}
+@media only screen and (max-width: 320px) {
+  .typer h1 {
+    margin: 0 auto;
+  }
 }
