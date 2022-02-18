@@ -14,9 +14,9 @@
   content: "";
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 6px solid white;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid white;
   @apply absolute top-7 right-4;
 }
 
@@ -47,7 +47,7 @@
   overflow: hidden;
  
 }
-@media only screen and (max-width: 410gipx) {
+@media only screen and (max-width: 410px) {
   .typer h1 {
     margin: 0 auto;
   }
