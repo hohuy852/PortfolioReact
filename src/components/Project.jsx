@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye, faCodeBranch, faStar, faTerminal } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import Picture1 from "../assets/Picture1.png"
+import AOS from 'aos'
 const Project = () => {
     const [data, setData] = useState([
         {
@@ -48,6 +49,9 @@ const Project = () => {
             img:'https://d33wubrfki0l68.cloudfront.net/61e6632aba9b220008ee9c06/screenshot_2022-01-18-06-50-53-0000.png'
         },
     ])
+    useEffect(() =>{
+        AOS.init()
+    },[])
     return (
         <section id='project' className='py-32 bg-[#23263a]' >
             <div className='xl:container px-5'>
@@ -70,7 +74,7 @@ const Project = () => {
                 </div>
                 <div className='grid sm:grid-cols-2 lg:grid-cols-3 text-white mt-14 gap-x-5 gap-y-7 px-4 sm:px0'>
                     {
-                        data.map((repos, index) => (<div className='bg-color-1 rounded-lg flex  flex-col gap-y-6 group' key={repos.name}>
+                        data.map((repos, index) => (<div className='bg-color-1 rounded-lg flex  flex-col gap-y-6 group' data-aos="zoom-in"  key={repos.name}>
                     
                                 <img src={repos.img} alt="" className='rounded-lg  object-contain ' />
                          

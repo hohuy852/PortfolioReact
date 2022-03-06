@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import AOS from 'aos';
 const Skill = () => {
     const skills = [{
         name: 'Vue JS',
@@ -16,7 +17,9 @@ const Skill = () => {
         name: 'HTML & CSS',
         width: '52%',
     }]
-
+    useEffect(() =>{
+        AOS.init()
+    },[])
     return (
         <section id='skill' className='py-32 bg-color-1'>
             <div className='xl:container '>
@@ -31,7 +34,7 @@ const Skill = () => {
                     <div className='text-white flex flex-col gap-y-8 w-5/6'>
                         {skills.map((skill, index) => (<div className='skill relative ' key={index}>
                             <p className='mb-2'>{skill.name}</p>
-                            <div style={{ width: skill.width }} className=' skill-bar bg-red-custom relative h-5'>
+                            <div style={{ width: skill.width }} data-aos="fade-right" data-aos-offset="200" className=' skill-bar bg-red-custom relative h-5'>
                                 <span className='skill-percentage right-0 absolute -top-10 border-2 px-3 py-1 rounded-md text-sm'>{skill.width}</span>
                             </div>
                         </div>))}

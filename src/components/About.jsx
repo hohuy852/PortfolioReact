@@ -1,8 +1,10 @@
 import React from 'react'
 import { useEffect } from 'react'
-
+import AOS from 'aos'
 const About = () => {
-
+    useEffect(() =>{
+        AOS.init()
+    },[])
     return (
         <section id='about' className='py-32 bg-[#23263a]' >
             <div className='xl:container px-5'>
@@ -16,9 +18,9 @@ const About = () => {
             </div>
             <div className='xl:container  pt-24 '>
                 <div className='grid sm:grid-cols-2 justify-items-center gap-y-10 px-6'>
-                    <div className='w-80 h-96 bg-white '>
+                    <div className='w-80 h-96 bg-white ' data-aos="fade-right" data-aos-duration="900">
                     </div>
-                    <div className='text-white '>
+                    <div className='text-white  '  data-aos="fade-left">
                         <h2 className='text-h2 mb-6 font-bold'>Hi There</h2>
                         <div>
                             <p className='mb-3'>In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis</p>

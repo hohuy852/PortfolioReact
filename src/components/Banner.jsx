@@ -25,6 +25,9 @@ const Banner = () => {
                             <a href="/" className='px-10 py-3 rounded-full border-2 border-[#ff4a57] hover:bg-[#ff4a57] transition ease-in font-semibold'>My portfolio</a>
                         </div>
                     </div>
+                    <div className='flex justify-center items-center'>
+                        <img src="" alt="Hinh" />
+                    </div>
                 </div>
             </div>
         </section>
